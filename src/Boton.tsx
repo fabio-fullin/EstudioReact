@@ -1,5 +1,6 @@
 import type { ReactElement, ReactNode } from "react"
 import "./Boton.css"
+import { useGlobalContext } from "./global.context"
 
 interface Props {
   children: ReactNode,
@@ -11,12 +12,22 @@ interface ChildrenProps {
 }
 
 export const ColorRed = ({ children }: ChildrenProps) => {
-  return (<div className="color-red">{children}</div>)
+  const {value: valor} = useGlobalContext()
+
+  return (<div className="color-red">{valor}: {children}</div>)
 }
 
+
+
 export const Boton = ({ children, parentMethod }: Props) : ReactElement => {
+  const {setValue: setValor} = useGlobalContext()
+
+  const handleClick = () => {
+  setValor(2)
+  parentMethod()
+}
   return (
-    <button className="custom-button" onClick={parentMethod}>
+    <button className="custom-button" onClick={handleClick}>
       {children}
     </button>
   )

@@ -1,6 +1,7 @@
 .custom-button {
   color: inherit;
   background-color: grey;
+  margin: 5px;
 }
 
 .color-red {
