@@ -31,22 +31,31 @@ const PruebaGatitos = () => {
             {loading && <p>Cargando...</p>}
             {!loading && <p>Completado.</p>}
             
-            {imageUrl && (
-                <div style={{ margin: '20px 0' }}>
-                    <img 
-                        style={{ 
-                            width: '200px', 
-                            height: '200px', 
-                            objectFit: 'cover',
-                            borderRadius: '10px',
-                            boxShadow: '0 4px 8px rgba(0,0,0,0.2)'
-                        }} 
-                        src={imageUrl.url} 
+            <div 
+                style={{
+                margin: "20px 0",
+                width: "200px",
+                height: "200px",
+                borderRadius: "10px",
+                overflow: "hidden",
+                display: "inline-block",
+                backgroundColor: "#eee", // placeholder gris
+                }}>
+                {imageUrl ?  (
+                    <img
+                        style={{
+                            width: "100%",
+                            height: "100%",
+                            objectFit: "cover",
+                        }}
+                        src={imageUrl.url}
                         alt="Gatito aleatorio"
                     />
-                </div>
-            )}
-            
+                    ) : 
+                    ( <span style={{ lineHeight: "200px", color: "#aaa" }}>Imagen futura...</span>)
+                }
+            </div>
+            <br />
             <button 
                 onClick={handleClick} 
                 disabled={loading}
