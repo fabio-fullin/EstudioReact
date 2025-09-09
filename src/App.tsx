@@ -2,7 +2,7 @@
 import { type ReactElement } from 'react';
 import PruebaBoton from './PruebaBoton';
 import PruebaGatitos from './PruebaGatitos';
-import {GlobalProvider} from './global.context'
+import {GlobalProvider} from './global.provider'
 
 
 const App = () : ReactElement => {

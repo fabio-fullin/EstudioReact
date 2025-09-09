@@ -1,4 +1,4 @@
-import { createContext, useContext, useState, type ReactNode } from "react";
+import { createContext, useContext } from "react";
 
 //aca va lo que se desea guardar
 interface GlobalContextValueType {
@@ -20,19 +20,7 @@ export const GlobalContext = createContext<GlobalContextType>({
     setValue: () => {}
 })
 
-interface GlobalProps {
-    children: ReactNode
-}
 
-export const GlobalProvider = ({children}: GlobalProps) => {
-    const [value, setValue] = useState<GlobalContextValueType>(EmptyGlobalState)
-
-    return (
-        <GlobalContext.Provider value={{value, setValue}}>
-            {children}
-        </GlobalContext.Provider>
-    )
-}
 
 export const useGlobalContext = () => {
     const context = useContext(GlobalContext)
