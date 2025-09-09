@@ -1,7 +1,7 @@
 import { createContext, useContext } from "react";
 
 //aca va lo que se desea guardar
-interface GlobalContextValueType {
+export interface GlobalContextValueType {
     Numero1: number,
     Numero2: number,
     Nombre: string
@@ -24,7 +24,7 @@ export const GlobalContext = createContext<GlobalContextType>({
 
 export const useGlobalContext = () => {
     const context = useContext(GlobalContext)
-    // if (context.value === 0)
-    //     throw new Error("GlobalContext deber ser usando dentro de GlobalProvider")
+    if (!context.value)
+         throw new Error("GlobalContext deber ser usando dentro de GlobalProvider")
     return context
 }
