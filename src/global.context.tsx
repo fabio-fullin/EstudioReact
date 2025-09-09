@@ -1,14 +1,22 @@
 import { createContext, useContext, useState, type ReactNode } from "react";
 
-interface GlobalContextType {
-    value: number
-    setValue: React.Dispatch<React.SetStateAction<number>>
+//aca va lo que se desea guardar
+interface GlobalContextValueType {
+    Numero1: number,
+    Numero2: number,
+    Nombre: string
 }
 
-export const EmptyGlobalState: number = 0
+//aca inicializacion
+export const EmptyGlobalState: GlobalContextValueType = {Numero1: 0, Numero2: 2, Nombre: "hola"}
+
+interface GlobalContextType {
+    value: GlobalContextValueType
+    setValue: React.Dispatch<React.SetStateAction<GlobalContextValueType>>
+}
 
 export const GlobalContext = createContext<GlobalContextType>({
-    value: 0,
+    value: EmptyGlobalState,
     setValue: () => {}
 })
 
@@ -17,7 +25,7 @@ interface GlobalProps {
 }
 
 export const GlobalProvider = ({children}: GlobalProps) => {
-    const [value, setValue] = useState<number>(EmptyGlobalState)
+    const [value, setValue] = useState<GlobalContextValueType>(EmptyGlobalState)
 
     return (
         <GlobalContext.Provider value={{value, setValue}}>

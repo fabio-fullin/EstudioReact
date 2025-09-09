@@ -14,7 +14,7 @@ interface ChildrenProps {
 export const ColorRed = ({ children }: ChildrenProps) => {
   const {value: valor} = useGlobalContext()
 
-  return (<div className="color-red">{valor}: {children}</div>)
+  return (<div className="color-red">{valor.Numero1}/{valor.Numero2}/{valor.Nombre} =  {children}</div>)
 }
 
 
@@ -23,7 +23,7 @@ export const Boton = ({ children, parentMethod }: Props) : ReactElement => {
   const {setValue: setValor} = useGlobalContext()
 
   const handleClick = () => {
-  setValor(2)
+  setValor({Numero1: 2, Numero2: 6, Nombre: "chau"})
   parentMethod()
 }
   return (
