@@ -9,7 +9,7 @@ const App = () : ReactElement => {
   
   return (
     <>
-    <div>
+    <div style={{width: '100%', textAlign: 'center'}}>
       <PruebaGatitos />
       
       <GlobalProvider>
