@@ -1,5 +1,5 @@
+import MiComponente from "./MiComponente";
 
-import PruebaGatitos from './PruebaGatitos';
 
 
 
@@ -8,8 +8,11 @@ const App: React.FC = () => {
   return (
     <>
     <div>
-
-      <PruebaGatitos />
+      <MiComponente param1="este es el param1">
+        <h3>Este es el children1</h3>
+        <h3>Este es el children2</h3>
+      </MiComponente>
+      
     </div>
     </>
   );
