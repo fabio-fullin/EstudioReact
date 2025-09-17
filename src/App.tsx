@@ -1,5 +1,5 @@
 
-import PruebaGatitos from './PruebaGatitos';
+import PruebaRickAndMorty from './PruebaRickAndMorty';
 
 
 
@@ -9,7 +9,7 @@ const App: React.FC = () => {
     <>
     <div>
 
-      <PruebaGatitos />
+      <PruebaRickAndMorty />
     </div>
     </>
   );
