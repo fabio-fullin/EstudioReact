@@ -5,6 +5,7 @@ import PruebaBoton from './PruebaBoton';
 import PruebaGatitos from './PruebaGatitos';
 import {GlobalProvider} from './global.provider'
 import PruebaRickAndMorty from './PruebaRickAndMorty';
+import PruebaUseFetch from "./PruebaUseFetch";
 
 
 const App = () : ReactElement => {
@@ -28,6 +29,9 @@ const App = () : ReactElement => {
     <div>
 
       <PruebaRickAndMorty />
+    </div>
+    <div>
+      <PruebaUseFetch />
     </div>
     </>
   );
