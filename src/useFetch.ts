@@ -22,10 +22,6 @@ export const useFetch = <T>(url: string): Params<T> => {
     const fetchData = async () => {
       try {
 
-        setTimeout(()=>{
-            console.log('aa')
-        }, 10000);
-
         const response = await fetch(url, controller);
 
         if (!response.ok) {
