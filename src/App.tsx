@@ -4,6 +4,7 @@ import { type ReactElement } from 'react';
 import PruebaBoton from './PruebaBoton';
 import PruebaGatitos from './PruebaGatitos';
 import {GlobalProvider} from './global.provider'
+import PruebaRickAndMorty from './PruebaRickAndMorty';
 
 
 const App = () : ReactElement => {
@@ -16,13 +17,17 @@ const App = () : ReactElement => {
       <GlobalProvider>
         <PruebaBoton />
       </GlobalProvider>
-    
+    </div>
       <div>
-      <MiComponente param1="este es el param1">
-        <h3>Este es el children1</h3>
-        <h3>Este es el children2</h3>
-      </MiComponente>
-      
+        <MiComponente param1="este es el param1">
+          <h3>Este es el children1</h3>
+          <h3>Este es el children2</h3>
+        </MiComponente>
+      </div>
+
+    <div>
+
+      <PruebaRickAndMorty />
     </div>
     </>
   );
