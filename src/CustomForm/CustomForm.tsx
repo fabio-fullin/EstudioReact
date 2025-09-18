@@ -6,7 +6,10 @@ import { schema, type FormValues } from "./models/form.models";
 const CustomForm = () => {
   const { control, handleSubmit, formState: { errors } } = useForm<FormValues>({
     resolver: zodResolver(schema),
-    mode: "onBlur"
+    //mode: "onBlur"  //es para que apenas salga el focus ya haga la validacion en lugar en en el submit
+    defaultValues: {
+      email: "agarrame@goog.com"
+    }
   });
 
   const onSubmit: SubmitHandler<FormValues> = (data) => {
