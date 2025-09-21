@@ -23,6 +23,7 @@ const CustomForm = () => {
       <InputForm name="password" control={control} label="Password" type="password" error={errors.password} />
       <InputForm name="confirmPassword" control={control} label="Confirm Password" type="password" error={errors.confirmPassword} />
       <button type="submit" > Submit</button>
+      <br/><br/>
     </form>
   )
 }
