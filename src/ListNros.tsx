@@ -1,0 +1,26 @@
+import { useEffect, useState } from "react"
+
+
+interface Props {
+    fnGetItems(): number[]
+}
+
+
+const ListNros = (fn: Props) => {
+    const [items, setItems ] = useState<number[]>([])
+
+    useEffect(() => {
+        setItems(fn.fnGetItems())
+        console.log('Updating items:')
+    }, [fn])
+
+  return (
+    <>
+        <div>Items list</div>
+        {items.map((item) =>  <div key={item}>{item}</div>
+        )}
+    </>
+  )
+}
+
+export default ListNros

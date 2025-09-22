@@ -1,4 +1,3 @@
-import React, { type ReactNode } from 'react'
 import { useFetch } from './useFetch'
 
 interface CharacterImage {
@@ -19,9 +18,9 @@ const x = useFetch<ApiResponse>('https://rickandmortyapi.com/api/character');
      <div>PruebaUseFetch</div>
      {x.loading}
      <div>
-        {x.data?.results.map((c) => {
+        {x.data?.results.map((c, rowIndex) => {
             return (
-            <pre>{c.name}</pre>
+            <pre key={`row-${rowIndex}`}>{c.name}</pre>
             )
         })}
      </div>

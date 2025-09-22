@@ -1,5 +1,3 @@
-import React, { type ReactNode } from 'react'
-
 
 interface MiComponenteProps {
     param1: string;
@@ -27,7 +25,7 @@ const MiComponente: React.FC<MiComponenteProps> = (props) => {
   return (
     <div>
       <h1>{props.param1}</h1>
-      <h2>{props.children}</h2>
+      <div>{props.children}</div>
     </div>
   );
 };

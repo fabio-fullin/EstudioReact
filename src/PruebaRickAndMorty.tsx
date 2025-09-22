@@ -64,7 +64,9 @@ const PruebaRickAndMorty = () => {
         const data: ApiResponse = await response.json();
         setImages(data.results);
       } catch (err) {
+        console.log(err)
       } finally {
+        console.log('Finally')
       }
     };
 
@@ -79,9 +81,9 @@ const PruebaRickAndMorty = () => {
         images.map(
             (c) => {
                 return (
-                    <div>
+                    <div key={c.id} >
                         <img 
-                            key={c.id} 
+                            
                             src={c.image} 
                             alt={c.name}
                             style={{ width: '80%', borderRadius: '8px' }}

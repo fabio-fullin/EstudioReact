@@ -7,6 +7,7 @@ import {GlobalProvider} from './global.provider'
 import PruebaRickAndMorty from './PruebaRickAndMorty';
 import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
+import PruebaUseCallback from "./PruebaUseCallback";
 
 
 const App = () : ReactElement => {
@@ -40,6 +41,8 @@ const App = () : ReactElement => {
     <div>
       <CustomForm />
     </div>
+    <hr/>
+    <PruebaUseCallback />
     </>
   );
 };
