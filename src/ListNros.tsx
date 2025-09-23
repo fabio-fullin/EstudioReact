@@ -12,7 +12,7 @@ const ListNros = (fn: Props) => {
     useEffect(() => {
         setItems(fn.fnGetItems())
         console.log('Updating items:')
-    }, [fn])
+    }, [fn.fnGetItems])
 
   return (
     <>
