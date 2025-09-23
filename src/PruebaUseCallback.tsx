@@ -7,7 +7,7 @@ import ListNros from './ListNros'
 
 
 const PruebaUseCallback = () => {
-    const [number, setNumber] = useState<number>(1)
+    const [number, setNumber] = useState<number>(5)
     const [dark, setDark] = useState<boolean>(false)
     
 /* Asi hacia que se ejecute el useEffect cada vez que se actualizaba el theme
@@ -16,8 +16,12 @@ const PruebaUseCallback = () => {
     }
 */
 
-const getItems = useCallback(() => {
-        return [number, number+1, number+2]
+/* Aca el getItems queda como un callback que solo se ejecuta cuando el number cambia y no como antes que se ejecutaba siempre porque 
+cuando entraba en el PruebaUseCallBack() se ejecutaba siempre y getItems era una funcion nueva cada vez. Entonces como cada vez es 
+una funcion nueva el useEffect de ListNros se ejecuta siempre. 
+*/
+const getItems = useCallback((incremento:number) => {
+        return [number, number+incremento, number+incremento+incremento]
     }, [number])
 
     const theme = {

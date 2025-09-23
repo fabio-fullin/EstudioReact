@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 
 interface Props {
-    fnGetItems(): number[]
+    fnGetItems(inc:number): number[]
 }
 
 
@@ -10,7 +10,7 @@ const ListNros = (fn: Props) => {
     const [items, setItems ] = useState<number[]>([])
 
     useEffect(() => {
-        setItems(fn.fnGetItems())
+        setItems(fn.fnGetItems(2))
         console.log('Updating items:')
     }, [fn.fnGetItems])
 
