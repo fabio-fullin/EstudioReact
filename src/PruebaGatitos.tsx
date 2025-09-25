@@ -24,9 +24,16 @@ const PruebaGatitos = () => {
         );
     }
 
+    const estilo = {
+        est: {
+            color: "red"        
+        }
+    }
+
     return (
         <div style={{ padding: '20px', textAlign: 'center' }}>
-            <h2>Gatito Aleatorio</h2>
+            <h2 style={{...estilo.est}}>Gatito Aleatorio</h2>
+            {/* <h2 style={estilo.est}>Gatito Aleatorio</h2> */}
             
             {loading && <p>Cargando...</p>}
             {!loading && <p>Completado.</p>}
