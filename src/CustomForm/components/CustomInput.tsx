@@ -22,7 +22,7 @@ const InputForm = ({ name, control, label, type, error }: Props) => {
         }
       />
       {/* {error && <p className="error">{error.message}</p>} */}
-      {error ? <p className="error">{error.message}</p> : <p className="error"></p>}
+      {error ? <p className="error">{error.message}</p> : <p className="error sinerror"></p>}
     </div>
   )
 }
