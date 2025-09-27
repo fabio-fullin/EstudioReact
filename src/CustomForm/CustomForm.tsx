@@ -17,12 +17,12 @@ const CustomForm = () => {
   }
 
   return (
-    <form onSubmit={handleSubmit(onSubmit)}>
+    <form onSubmit={handleSubmit(onSubmit)} className='flex justify-center items-center space-x-4'>
       <InputForm name="name" control={control} label="Name" type="text" error={errors.name} />
       <InputForm name="email" control={control} label="Email" type="email" error={errors.email} />
       <InputForm name="password" control={control} label="Password" type="password" error={errors.password} />
       <InputForm name="confirmPassword" control={control} label="Confirm Password" type="password" error={errors.confirmPassword} />
-      <button type="submit" > Submit</button>
+      <button className='bg-amber-700 text-white rounded-md w-32' type="submit" > Submit</button>
       <br/><br/>
     </form>
   )

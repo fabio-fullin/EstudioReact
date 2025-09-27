@@ -38,7 +38,8 @@ const App = () : ReactElement => {
       <PruebaUseFetch />
     </div>
     <hr />
-    <div>
+    <div className='bg-gray-700 p-2'>
+      <br></br>
       <CustomForm />
     </div>
     <hr/>
