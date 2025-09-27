@@ -24,7 +24,7 @@ const App = () : ReactElement => {
     <hr />
     <div>
       <MiComponente param1="este es el param1">
-        <h3>Este es el children1</h3>
+        <h3 className='text-yellow-200'>Este es el children1 con estilos de tailwind</h3>
         <h3>Este es el children2</h3>
       </MiComponente>
     </div>
