@@ -8,6 +8,7 @@ import PruebaRickAndMorty from './PruebaRickAndMorty';
 import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
+import "./App.css"
 
 
 const App = () : ReactElement => {
@@ -25,7 +26,8 @@ const App = () : ReactElement => {
     <div>
       <MiComponente param1="este es el param1">
         <h3 className='text-yellow-200'>Este es el children1 con estilos de tailwind</h3>
-        <h3>Este es el children2</h3>
+        <h3 className='bg-menta-500 text-mierda' style={{color: 'var(--lamierda)'}} >Este es el children2</h3> 
+        {/* Tambien se puede usar la clase colormierda */}
       </MiComponente>
     </div>
     <hr />

@@ -1,5 +1,15 @@
 @import "tailwindcss";
 
+@theme {
+  --color-menta-500: oklch(0.72 0.11 178);
+  
+}
+
+@theme {
+  --color-mierda: brown; 
+  /* --color-mierda Se puede usar como variable de css tambien en var(--color-mierda) */
+}
+
 :root {
   font-family: system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;

@@ -1,9 +1,17 @@
+/*
+Como no funciono aca definir variables de tailwind puedo usar --lamierda como variable de css
+El @theme solo se procesa una vez no puede sobreescribirse
+*/
 #root {
   max-width: 1280px;
   margin: 0 auto;
   padding: 2rem;
+  --lamierda: brown;
 }
 
+.colormierda {
+  color: var(--lamierda)
+}
 
 @keyframes logo-spin {
   from {
