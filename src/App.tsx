@@ -8,6 +8,8 @@ import PruebaRickAndMorty from './PruebaRickAndMorty';
 import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
+// @ts-ignore
+import PruebaNearScreen from "./PruebaNearScreen.jsx";
 import "./App.css"
 
 
@@ -46,6 +48,8 @@ const App = () : ReactElement => {
     </div>
     <hr/>
     <PruebaUseCallback />
+    <hr/>
+    <PruebaNearScreen />
     </>
   );
 };
