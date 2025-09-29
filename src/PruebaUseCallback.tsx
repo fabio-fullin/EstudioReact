@@ -34,7 +34,7 @@ const getItems = useCallback((incremento:number) => {
         <div style={theme}>
             <input type="number" value={number} onChange={e => setNumber(parseInt(e.target.value))}
             />
-            <button onClick={() => setDark(prevDark => !prevDark)}>Toggle Theme</button>
+            <button onClick={() => setDark(prevDark => !prevDark)} className='bg-amber-400 rounded-xl px-2 py-2 cursor-pointer'>Toggle Theme</button>
             <ListNros fnGetItems={getItems} />
         </div>
     </>
