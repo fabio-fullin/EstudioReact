@@ -1,3 +1,4 @@
+import type { ReactElement } from 'react';
 import { useFetch } from './useFetch'
 
 interface CharacterImage {
@@ -9,7 +10,7 @@ interface ApiResponse {
   results: CharacterImage[];
 }
 
-export const PruebaUseFetch = () => {
+export const PruebaUseFetch = (): ReactElement => {
 
 const x = useFetch<ApiResponse>('https://rickandmortyapi.com/api/character');
 

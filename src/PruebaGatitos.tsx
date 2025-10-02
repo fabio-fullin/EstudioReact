@@ -1,10 +1,11 @@
+import type { ReactElement } from 'react';
 import { useGeneralFetch } from './hooks/useGeneralFetch';
 
 type FotoType = {
     url: string
 }
 
-const PruebaGatitos = () => {
+const PruebaGatitos = (): ReactElement => {
     const { data: imageUrl, loading, error, refetch } = useGeneralFetch<FotoType>('https://cataas.com/cat?json=true');
 
     function handleClick(): void {

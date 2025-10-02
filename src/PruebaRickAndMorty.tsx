@@ -1,4 +1,4 @@
-import React, { useEffect, useState } from 'react'
+import React, { useEffect, useState, type ReactElement } from 'react'
 
 
 /* Interfaces completas segun la url
@@ -47,7 +47,7 @@ interface ApiResponse {
   results: CharacterImage[];
 }
 
-const PruebaRickAndMorty = () => {
+const PruebaRickAndMorty = (): ReactElement => {
 
    const [images, setImages] = useState<CharacterImage[]>([]);
 

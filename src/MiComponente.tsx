@@ -1,3 +1,4 @@
+import type { ReactElement } from "react";
 
 interface MiComponenteProps {
     param1: string;
@@ -21,7 +22,8 @@ interface MiComponenteProps {
 // export default MiComponente
 
 //aca pasando todo en un objeto
-const MiComponente: React.FC<MiComponenteProps> = (props) => {
+//const MiComponente: React.FC<MiComponenteProps> = (props) => {
+const MiComponente = (props: MiComponenteProps): ReactElement => {
   return (
     <div>
       <h1>{props.param1}</h1>

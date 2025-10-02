@@ -1,6 +1,7 @@
 import { type Control, Controller, type FieldError } from "react-hook-form";
 import './CustomInput.css'
 import type { FormValues } from "../models/form.models";
+import type { ReactElement } from "react";
 
 interface Props {
   name: keyof FormValues;
@@ -10,7 +11,7 @@ interface Props {
   error?: FieldError;
 }
 
-const InputForm = ({ name, control, label, type, error }: Props) => {
+const InputForm = ({ name, control, label, type, error }: Props) : ReactElement => {
   return (
     <div className="form-group">
       <label htmlFor={name}>{label}</label>

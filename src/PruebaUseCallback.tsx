@@ -1,4 +1,4 @@
-import { useCallback, useState } from 'react'
+import { useCallback, useState, type ReactElement } from 'react'
 import ListNros from './ListNros'
 
 
@@ -6,7 +6,7 @@ import ListNros from './ListNros'
 
 
 
-const PruebaUseCallback = () => {
+const PruebaUseCallback = (): ReactElement => {
     const [number, setNumber] = useState<number>(5)
     const [dark, setDark] = useState<boolean>(false)
     
