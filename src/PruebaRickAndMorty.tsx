@@ -1,4 +1,4 @@
-import React, { useEffect, useState, type ReactElement } from 'react'
+import { useEffect, useState, type ReactElement } from 'react'
 
 
 /* Interfaces completas segun la url
