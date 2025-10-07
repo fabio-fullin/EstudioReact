@@ -9,7 +9,7 @@ import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
 // @ts-ignore
-import PruebaNearScreen from "./PruebaNearScreen.jsx";
+import PruebaNearScreen from "./PruebaNearScreen";
 import "./App.css"
 
 
