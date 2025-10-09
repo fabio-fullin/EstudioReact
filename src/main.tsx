@@ -3,6 +3,7 @@ import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
 import PruebaBoton from './PruebaBoton'
+import {PruebaUseEffect} from './PruebaUseEffect' //si pongo PruebaUseEffect sin {} busca el default export
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: '/boton',
     element: <PruebaBoton />
+  },
+  {
+    path: '/pruebauseeffect',
+    element: <PruebaUseEffect />
   }
 ])
 
