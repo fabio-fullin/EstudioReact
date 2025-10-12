@@ -2,7 +2,7 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
-import PruebaBoton from './PruebaBoton'
+import PruebaBoton from './components/PruebaBoton'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 
 const router = createBrowserRouter([

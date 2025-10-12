@@ -1,14 +1,14 @@
 import MiComponente from "./MiComponente";
 
 import { type ReactElement } from 'react';
-import PruebaBoton from './PruebaBoton';
+import PruebaBoton from './components/PruebaBoton';
 import PruebaGatitos from './PruebaGatitos';
-import {GlobalProvider} from './global.provider'
+import {GlobalProvider} from './components/global.provider'
 import PruebaRickAndMorty from './PruebaRickAndMorty';
 import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
-// @ts-ignore
+// @ts-expect-error Error
 import PruebaNearScreen from "./PruebaNearScreen";
 import "./App.css"
 
