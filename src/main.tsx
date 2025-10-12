@@ -4,6 +4,7 @@ import './index.css'
 import App from './App'
 import PruebaBoton from './components/PruebaBoton'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import Prueba2UseEffect from './components/Prueba2UseEffect'
 
 const router = createBrowserRouter([
   {
@@ -13,6 +14,10 @@ const router = createBrowserRouter([
   {
     path: '/boton',
     element: <PruebaBoton />
+  },
+  {
+    path: '/prueba2useeffect',
+    element: <Prueba2UseEffect />
   }
 ])
 
