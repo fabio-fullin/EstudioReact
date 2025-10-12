@@ -2,7 +2,7 @@ import React from "react";
 import ReactDOM from "react-dom";
 import { Image } from "./Image.jsx";
 
-import "./styles.css";
+import "./PruebaNearScreen.css";
 
 const images = [
   "https://images.unsplash.com/photo-1541781774459-bb2af2f05b55?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=800&q=60",

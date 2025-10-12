@@ -26,7 +26,7 @@ const getItems = useCallback((incremento:number) => {
 
     const theme = {
         backgroundColor: dark ? '#333' : '#FFF',
-        color: dark ? '#FFF' : '#333'
+        color: dark ? '#000' : '#333'
     }
   return (
     <>

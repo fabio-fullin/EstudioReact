@@ -9,7 +9,7 @@ import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
 // @ts-expect-error Error
-import PruebaNearScreen from "./PruebaNearScreen";
+import PruebaNearScreen from "./components/PruebaNearScreen";
 import "./App.css"
 
 

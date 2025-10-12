@@ -1,5 +1,5 @@
 import React from "react";
-import { useNearScreen } from "./useNearScreen";
+import { useNearScreen } from "../useNearScreen";
 
 export const Image = ({ src }) => {
   const [isNear, fromRef] = useNearScreen();
