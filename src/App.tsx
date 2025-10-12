@@ -8,15 +8,18 @@ import PruebaRickAndMorty from './PruebaRickAndMorty';
 import PruebaUseFetch from "./PruebaUseFetch";
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
-// @ts-ignore
+// @ts-expect-error: PruebaNearScreen does not have TypeScript types or has incompatible types
 import PruebaNearScreen from "./PruebaNearScreen";
 import "./App.css"
+import PruebaSuperFetch from "./PruebaSuperFetch";
 
 
 const App = () : ReactElement => {
   
   return (
     <>
+      <PruebaSuperFetch />
+    <hr /> <hr /> <hr />
     <div style={{width: '100%', textAlign: 'center'}}>
       <PruebaGatitos />
       
