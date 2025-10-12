@@ -2,7 +2,7 @@ import MiComponente from "./MiComponente";
 
 import { type ReactElement } from 'react';
 import PruebaBoton from './components/PruebaBoton';
-import PruebaGatitos from './PruebaGatitos';
+import PruebaGatitos from './components/PruebaGatitos';
 import {GlobalProvider} from './components/global.provider'
 import PruebaRickAndMorty from './PruebaRickAndMorty';
 import PruebaUseFetch from "./PruebaUseFetch";

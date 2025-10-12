@@ -1,5 +1,5 @@
 import type { ReactElement } from 'react';
-import { useGeneralFetch } from './hooks/useGeneralFetch';
+import { useGeneralFetch } from '../hooks/useGeneralFetch';
 
 type FotoType = {
     url: string
