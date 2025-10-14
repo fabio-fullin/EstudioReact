@@ -11,7 +11,7 @@ interface Params<T> {
 }
 
 // Función sleep/genérica para delays
-const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
+//const sleep = (ms: number) => new Promise(resolve => setTimeout(resolve, ms));
 
 export const useGeneralFetch = <T>(url: string): Params<T> => {
   const [data, setData] = useState<DataType<T>>(null)
@@ -26,12 +26,12 @@ export const useGeneralFetch = <T>(url: string): Params<T> => {
 
   useEffect(() => {
     const controller = new AbortController();
-
+    
     setLoading(true)
 
     const fetchData = async () => {
       try {
-        await sleep(2000);
+        //await sleep(2000);
         const response = await fetch(url, controller);
 
         if (!response.ok) {

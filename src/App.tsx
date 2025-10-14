@@ -17,7 +17,11 @@ const App = () : ReactElement => {
   
   return (
     <>
+    <a href='/'>Home</a><br />
+      <a href='/boton'>Prueba Boton</a><br />
+      <a href='/prueba2useeffect'>Prueba2Effect</a><br />
     <div style={{width: '100%', textAlign: 'center'}}>
+      
       <PruebaGatitos />
       
       <GlobalProvider>
@@ -26,8 +30,9 @@ const App = () : ReactElement => {
     </div>
     <hr />
     <div>
+      <h2 style={{"fontWeight": "bolder"}} className='underline'>MiComponente</h2>
       <MiComponente param1="este es el param1">
-        <h3 className='text-yellow-200'>Este es el children1 con estilos de tailwind</h3>
+        <h3 className='text-yellow-400'>Este es el children1 con estilos de tailwind</h3>
         <h3 className='bg-menta-500 text-mierda' style={{color: 'var(--lamierda)'}} >Este es el children2</h3> 
         {/* Tambien se puede usar la clase colormierda */}
       </MiComponente>

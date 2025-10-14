@@ -76,7 +76,7 @@ const PruebaRickAndMorty = (): ReactElement => {
 
   return (
     <>
-    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 0.7fr)', gap: '10px', margin: '20px' }}>
+    <div style={{ display: 'grid', gridTemplateColumns: 'repeat(4, 0.7fr)', gap: '25px', margin: '20px' }}>
     {
         images.map(
             (c) => {
@@ -86,7 +86,7 @@ const PruebaRickAndMorty = (): ReactElement => {
                             
                             src={c.image} 
                             alt={c.name}
-                            style={{ width: '80%', borderRadius: '8px' }}
+                            style={{ width: '100px', borderRadius: '8px' }}
                         />
                         <div>{c.name}</div>
                     </div>

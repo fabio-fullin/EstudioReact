@@ -7,7 +7,7 @@ type FotoType = {
 
 const PruebaGatitos = (): ReactElement => {
     const { data: imageUrl, loading, error, refetch } = useGeneralFetch<FotoType>('https://cataas.com/cat?json=true');
-
+    
     function handleClick(): void {
         if (!loading) {
             refetch();

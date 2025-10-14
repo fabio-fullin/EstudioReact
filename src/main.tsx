@@ -2,9 +2,9 @@
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App'
-import PruebaBoton from './components/PruebaBoton'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Prueba2UseEffect from './components/Prueba2UseEffect'
+import PruebaBotonConProvider from './components/PruebaBotonConProvider'
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
   },
   {
     path: '/boton',
-    element: <PruebaBoton />
+    element: <PruebaBotonConProvider />
   },
   {
     path: '/prueba2useeffect',

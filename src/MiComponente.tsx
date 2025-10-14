@@ -26,7 +26,7 @@ interface MiComponenteProps {
 const MiComponente = (props: MiComponenteProps): ReactElement => {
   return (
     <div>
-      <h1>{props.param1}</h1>
+      <div>{props.param1}</div>
       <div>{props.children}</div>
     </div>
   );
