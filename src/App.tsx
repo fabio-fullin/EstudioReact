@@ -1,15 +1,9 @@
 import MiComponente from "./MiComponente";
 
 import { type ReactElement } from 'react';
-import PruebaBoton from './components/PruebaBoton';
-import PruebaGatitos from './components/PruebaGatitos';
-import {GlobalProvider} from './components/global.provider'
-import PruebaRickAndMorty from './PruebaRickAndMorty';
-import PruebaUseFetch from "./PruebaUseFetch";
+
 import CustomForm from "./CustomForm/CustomForm";
 import PruebaUseCallback from "./PruebaUseCallback";
-// @ts-expect-error Error
-import PruebaNearScreen from "./components/PruebaNearScreen";
 import "./App.css"
 
 
@@ -20,13 +14,19 @@ const App = () : ReactElement => {
     <a href='/'>Home</a><br />
       <a href='/boton'>Prueba Boton</a><br />
       <a href='/prueba2useeffect'>Prueba2Effect</a><br />
+      <a href='/pruebagatitos'>PruebaGatitos</a><br />
+      <a href='/pruebarickandmorty'>Prueba Rick and Morty</a><br />
+      <a href='/pruebausefetch'>PruebaUseFetch</a><br />
+      <a href='/pruebanearscreen'>PruebaNearScreen</a><br />
+      <br />
     <div style={{width: '100%', textAlign: 'center'}}>
       
-      <PruebaGatitos />
+      {/* <PruebaGatitos /> */}
       
-      <GlobalProvider>
+      {/* <GlobalProvider>
         <PruebaBoton />
-      </GlobalProvider>
+      </GlobalProvider> */}
+
     </div>
     <hr />
     <div>
@@ -40,11 +40,11 @@ const App = () : ReactElement => {
     <hr />
     <div>
 
-      <PruebaRickAndMorty />
+      {/* <PruebaRickAndMorty /> */}
     </div>
     <hr />
     <div>
-      <PruebaUseFetch />
+      {/* <PruebaUseFetch /> */}
     </div>
     <hr />
     <div className='bg-gray-700 p-2'>
@@ -54,7 +54,7 @@ const App = () : ReactElement => {
     <hr/>
     <PruebaUseCallback />
     <hr/>
-    <PruebaNearScreen />
+    {/* <PruebaNearScreen /> */}
     </>
   );
 };

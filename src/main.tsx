@@ -5,6 +5,11 @@ import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Prueba2UseEffect from './components/Prueba2UseEffect'
 import PruebaBotonConProvider from './components/PruebaBotonConProvider'
+import PruebaGatitos from './components/PruebaGatitos'
+// @ts-expect-error Error
+import PruebaNearScreen from './components/PruebaNearScreen'
+import PruebaRickAndMorty from './PruebaRickAndMorty'
+import PruebaUseFetch from './PruebaUseFetch'
 
 const router = createBrowserRouter([
   {
@@ -18,7 +23,24 @@ const router = createBrowserRouter([
   {
     path: '/prueba2useeffect',
     element: <Prueba2UseEffect />
+  },
+  {
+    path: '/pruebagatitos',
+    element: <PruebaGatitos />
+  },
+  {
+    path: '/pruebarickandmorty',
+    element: <PruebaRickAndMorty />
+  },
+  {
+    path: '/pruebausefetch',
+    element: <PruebaUseFetch />
+  },
+    {
+    path: '/pruebanearscreen',
+    element: <PruebaNearScreen />
   }
+
 ])
 
 createRoot(document.getElementById('root')!).render(
