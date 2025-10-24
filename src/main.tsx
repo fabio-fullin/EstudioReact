@@ -10,6 +10,7 @@ import PruebaGatitos from './components/PruebaGatitos'
 import PruebaNearScreen from './components/PruebaNearScreen'
 import PruebaRickAndMorty from './PruebaRickAndMorty'
 import PruebaUseFetch from './PruebaUseFetch'
+import PruebaBoton from './components/PruebaBoton'
 
 const router = createBrowserRouter([
   {
@@ -17,7 +18,11 @@ const router = createBrowserRouter([
     element: <App />
   },
   {
-    path: '/boton',
+    path: '/pruebaboton',
+    element: <PruebaBoton />
+  },
+  {
+    path: '/pruebabotonconprovider',
     element: <PruebaBotonConProvider />
   },
   {

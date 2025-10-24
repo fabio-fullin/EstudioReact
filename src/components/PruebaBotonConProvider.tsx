@@ -5,6 +5,7 @@ import PruebaBoton from './PruebaBoton'
 const PruebaBotonConProvider = () => {
   return (
     <>
+    <h3>PruebaBotonConProvider</h3>
     <GlobalProvider>
         <PruebaBoton />
       </GlobalProvider>

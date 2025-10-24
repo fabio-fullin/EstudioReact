@@ -12,7 +12,8 @@ const App = () : ReactElement => {
   return (
     <>
     <a href='/'>Home</a><br />
-      <a href='/boton'>Prueba Boton</a><br />
+      <a href='/pruebaboton'>Prueba Boton</a><br />
+      <a href='/pruebabotonconprovider'>Prueba Boton Con Provider</a><br />
       <a href='/prueba2useeffect'>Prueba2Effect</a><br />
       <a href='/pruebagatitos'>PruebaGatitos</a><br />
       <a href='/pruebarickandmorty'>Prueba Rick and Morty</a><br />
