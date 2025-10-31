@@ -32,4 +32,4 @@ const MiComponente = (props: MiComponenteProps): ReactElement => {
   );
 };
 
-export default MiComponente
+export default MiComponente;
