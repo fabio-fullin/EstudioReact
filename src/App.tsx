@@ -36,6 +36,7 @@ const App = () : ReactElement => {
         <h3 className='text-yellow-400'>Este es el children1 con estilos de tailwind</h3>
         <h3 className='bg-menta-500 text-mierda' style={{color: 'var(--lamierda)'}} >Este es el children2</h3> 
         {/* Tambien se puede usar la clase colormierda */}
+        <p>Clase color mierda</p>
       </MiComponente>
     </div>
     <hr />

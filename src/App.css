@@ -13,6 +13,13 @@ El @theme solo se procesa una vez no puede sobreescribirse
   color: var(--lamierda)
 }
 
+/*
+No se puede usar @apply en custom classes. Eso no anda
+.colormierdaX {
+  @apply colormierda;
+}
+*/
+
 @keyframes logo-spin {
   from {
     transform: rotate(0deg);
