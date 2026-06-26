@@ -5,8 +5,7 @@ import App from './App'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Prueba2UseEffect from './components/Prueba2UseEffect'
 import PruebaBotonConProvider from './components/PruebaBotonConProvider'
-import PruebaGatitos from './components/PruebaGatitos'
-import PruebaPerritos from './components/PruebaPerritos'
+import PruebaAPIS from './components/PruebaAPIS'
 // @ts-expect-error Error
 import PruebaNearScreen from './components/PruebaNearScreen'
 import PruebaRickAndMorty from './PruebaRickAndMorty'
@@ -31,12 +30,8 @@ const router = createBrowserRouter([
     element: <Prueba2UseEffect />
   },
   {
-    path: '/pruebagatitos',
-    element: <PruebaGatitos />
-  },
-  {
-    path: '/pruebaperritos',
-    element: <PruebaPerritos />
+    path: '/pruebaapis',
+    element: <PruebaAPIS />
   },
   {
     path: '/pruebarickandmorty',
